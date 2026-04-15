@@ -108,8 +108,8 @@ docker service ps motiatemplate_app
 
 ## License
 
-Published under the [MIT](https://github.com/shba007/nuxtemplate/blob/main/LICENSE) license.
+Published under the [MIT](https://github.com/shba007/motiatemplate/blob/main/LICENSE) license.
 <br><br>
-<a href="https://github.com/shba007/nuxtemplate/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=shba007/nuxtemplate" />
+<a href="https://github.com/shba007/motiatemplate/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=shba007/motiatemplate" />
 </a>
