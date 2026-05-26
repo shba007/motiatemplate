@@ -1,7 +1,7 @@
 {
   "name": "motiatemplate",
   "version": "0.0.2",
-  "description": "Motia + Typescript + Bun Template",
+  "description": "Motia + Typescript Template",
   "author": "Shirsendu Bairagi <shirsendu2001@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -12,10 +12,10 @@
   "private": true,
   "engines": {
     "node": "^22.11.0 || ^24.14.0",
-    "pnpm": "^9.15.0 || ^10.2.0",
+    "pnpm": "^9.15.0 || ^10.2.0 || ^11.0.0",
     "bun": "^1.2.9"
   },
-  "packageManager": "bun@1.3.12",
+  "packageManager": "bun@1.3.14",
   "scripts": {
     "prepare": "husky || true",
     "dev": "sh -c \"iii-cli start -c iii-config.yaml & iii-cli console --enable-flow\"",
@@ -31,17 +31,17 @@
   "dependencies": {
     "motia": "^1.0.4-rc.1",
     "ofetch": "^1.5.1",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
-    "@dotenvx/dotenvx": "^1.61.0",
-    "@types/bun": "^1.3.12",
-    "eslint": "^10.2.0",
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
+    "@dotenvx/dotenvx": "^1.69.1",
+    "@types/bun": "^1.3.14",
+    "eslint": "^10.4.0",
     "eslint-config-unjs": "^0.6.2",
     "husky": "^9.1.7",
     "prettier": "^3.8.3",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }

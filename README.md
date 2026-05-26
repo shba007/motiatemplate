@@ -6,7 +6,7 @@
 
 ![Landing](public/previews/landing.webp)
 
-> Motia + Typescript + Bun Template
+> Motia + Typescript Template
 
 - 📦 Event Driven
 - 🐋 Containerized
