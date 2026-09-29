@@ -1,9 +1,25 @@
-name: 'motiatemplate-dev'
 services:
-  app:
-    build: .
-    restart: on-failure:3
-    env_file:
-      - .env.prod
+  engine:
+    image: iiidev/iii:latest
+    restart: unless-stopped
     ports:
-      - 4000:3111
+      - '49134:49134' # Engine WebSocket (SDK worker connections)
+      - '3111:3111' # HTTP Ingress
+      - '3113:3113' # Web Console
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - engine_data:/data
+    command: ['--config', '/app/config.yaml', '--no-update-check']
+
+  caller-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - engine
+    environment:
+      - III_URL=ws://engine:49134
+
+volumes:
+  engine_data:

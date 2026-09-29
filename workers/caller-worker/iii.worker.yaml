@@ -1,0 +1,8 @@
+name: caller-worker
+runtime:
+  language: typescript
+  package_manager: bun
+  entry: src/worker.ts
+scripts:
+  install: bun install
+  start: bun run src/worker.ts

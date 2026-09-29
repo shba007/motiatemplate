@@ -1,6 +1,5 @@
-types.d.ts
 # iii unifying backend engine files
-.env*
+.env
 data/
 
 # Byte-compiled / optimized / DLL files
@@ -153,7 +152,6 @@ activemq-data/
 *.sage.py
 
 # Environments
-.env
 .envrc
 .venv
 env/
@@ -288,7 +286,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.*
 !.env.example
 
@@ -386,5 +383,16 @@ target
 
 .vscode
 .mypy*
-test*
+
+# iii Engine Local State
+.iii/
+data/
+
+# Dependencies & Build
+node_modules/
+dist/
+
+# Environment & Logs
+.env
+*.log
 .DS_Store
