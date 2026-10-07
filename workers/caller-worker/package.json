@@ -1,8 +1,8 @@
 {
   "name": "caller-worker",
   "version": "0.1.0",
-  "type": "module",
   "description": "TypeScript API & worker services for iii",
+  "type": "module",
   "scripts": {
     "dev": "bun --watch src/worker.ts",
     "build": "tsc"

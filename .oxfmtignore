@@ -1,10 +1,11 @@
-# Nuxt dev/build outputs
+# Dev / build outputs
 .cache
 .data
 .nuxt
 .nitro
 .output
 dist
+static
 
 # Node dependencies
 node_modules
@@ -13,14 +14,20 @@ node_modules
 package.json
 bun.lock
 
+# Config files
+.oxlintrc.json
+oxfmtrc.json
+.oxfmtignore
+
 # Logs
 logs
 *.log
 
-# Misc
+# Misc & IDE
 .DS_Store
 .fleet
 .idea
+.vscode
 
 # Env files
 .env*
